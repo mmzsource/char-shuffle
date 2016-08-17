@@ -1,0 +1,5 @@
+This is a line of text
+I wonder what the program will do to it
+Long words is what we strive for although short words are also good tests
+
+Wonder what that empty line will bring :-S
