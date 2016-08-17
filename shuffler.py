@@ -17,8 +17,8 @@ def shuffle_inner_chars(word):
   if len(word) < 4:
     return word
 
-  first_char = word[:1]
-  last_char = word[-1:]
+  first_char = word[0]
+  last_char = word[-1]
   middle = word[1:-1]
   middle_chars = ''.join(random.sample(middle, len(middle)))
   return first_char + middle_chars + last_char
@@ -28,7 +28,7 @@ def main():
 
   if len(argv) == 2:
     with open(argv[1]) as f:
-      lines = f.read().splitlines();
+      lines = f.read().splitlines()
       for line in lines:
         print shuffle(line)
   else:
